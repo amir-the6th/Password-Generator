@@ -34,7 +34,7 @@ body {
 .generate-btn {
     color: white;
     font-weight: 700;
-    text-shadow: 1px 1px 10px #000;
+    text-shadow: 1px 0px 5px #111827;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -44,7 +44,7 @@ body {
 .button-wrapper {    
     padding-bottom: 40px;
     margin-bottom: 40px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #9CA3AF;
 }
 
 .password-wrapper {
