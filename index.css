@@ -1,3 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;0,800;1,800&display=swap');
+
 body {
     margin: 0;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #111827;
+    color: white;
+}
+
+.header {
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 0.9;
+}
+
+.random-pass {
+    color: #4ADF86;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-bottom: 4em;
+}
+
+.header-photo {
+    width: 600px;
+    border-radius: 5%;
+}
+
+.generate-btn {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0px 0px 1px  #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4ADF86;
+}
+
+.button-wrapper {    
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid white;
+}
+
+.password-wrapper {
+    display: flex;
+}
+
+#pass-box {
+    text-align: center;
+    width: 8em;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #273549;
 }
