@@ -100,7 +100,7 @@ body {
   
 .slider {
 -webkit-appearance: none;
-height: 15px;
+height: 10px;
 border-radius: 5px;
 background: white;
 outline: none;
@@ -109,8 +109,8 @@ outline: none;
 .slider::-webkit-slider-thumb {
 -webkit-appearance: none;
 appearance: none;
-width: 25px;
-height: 25px;
+width: 18px;
+height: 18px;
 border-radius: 50%;
 background: #10B981;
 cursor: pointer;
