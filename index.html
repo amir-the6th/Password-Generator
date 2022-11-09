@@ -2,24 +2,33 @@
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Password Generator</title>
     </head>
     <body>
         <div class="main-wrapper"> 
             <h1 class="header">Generate a<br><span class="random-pass">random password</span></h1>
             <p class="description">Never use an insecure password again.</p>
             <div class="button-wrapper">
-                <button class="generate-btn">Generate Passwords</button>
-                <!-- <input type="range" min="1" max="100" value="50"> -->
+                <div class="slider-container">
+                    <p class="password-length">Password Length: <span id="pass-length"></span></p>
+                    <input type="range" min="8" max="20" value="8" class="slider" id="myRange">
+                </div>
+                <button class="generate-btn" onclick="generatePass()">Generate Passwords</button>
             </div>
-            <div class="password-wrapper">
-                <p id="pass-box">Heyyyyy</p>
-                <p id="pass-box">Hoooooy</p>
+            <div class="pass-box-container">
+                <input id="pass-box1" class="pass-box" onclick="copyOnClick(1)" disabled></p>
+                <button id="copy-btn-1" class="copy-btn" onclick="copyOnClick(1)">Copy <i class="fa fa-copy"></i></button>
+            </div>
+            <div class="pass-box-container">
+                <input id="pass-box2" class="pass-box" onclick="this.select(2)" disabled></p>
+                <button id="copy-btn-2" class="copy-btn" onclick="copyOnClick(2)">Copy <i class="fa fa-copy"></i></button>
             </div>
         </div>
         
-        <!-- <div>
-            <img src="images/password.jpg" alt="two hands wearing gloves typing something on the laptop" class="header-photo">
-        </div> -->
+        <div class="image-wrapper">
+            <img src="images/padlock.png" alt="two hands wearing gloves typing something on the laptop" class="header-photo">
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
