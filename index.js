@@ -44,7 +44,7 @@ function copyOnClick(num) {
 
 
     copyBtn.innerHTML = "Copied!";
-    setTimeout(() => copyBtn.innerHTML = "Copy", 2000);
+    setTimeout(() => copyBtn.innerHTML = "Copy <i class='fa fa-copy'></i>", 2000);
 }
 
 sliderEl.oninput = function() {
