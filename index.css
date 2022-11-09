@@ -91,7 +91,7 @@ body {
 .slider-container {
     display: flex;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
   }
 
 .password-length {
@@ -99,27 +99,39 @@ body {
 }
   
 .slider {
--webkit-appearance: none;
-height: 10px;
-border-radius: 5px;
-background: white;
-outline: none;
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: white;
+    outline: none;
 }
 
 .slider::-webkit-slider-thumb {
--webkit-appearance: none;
-appearance: none;
-width: 18px;
-height: 18px;
-border-radius: 50%;
-background: #10B981;
-cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #10B981;
+    cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-width: 25px;
-height: 25px;
-border-radius: 50%;
-background: #10B981;
-cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #10B981;
+    cursor: pointer;
+}
+
+.symbols-checkbox {
+    margin-bottom: 1em;
+}
+
+.checkbox {
+    margin-left: 1.1em;
+    height: 1em;
+    width: 1em;
+    border: 1px solid green;
+    border-radius: 5px;
 }
