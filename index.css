@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap');
 
 body {
     margin: 0;
     font-family: 'Karla', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #111827;
     color: white;
 }
@@ -14,16 +14,17 @@ body {
     font-weight: 800;
     font-size: 3em;
     line-height: 0.9;
+    margin-bottom: 0;
 }
 
 .random-pass {
-    color: #4ADF86;
+    color: #10B981;
 }
 
 .description {
     font-weight: 400;
     font-size: 1.3em;
-    margin-bottom: 4em;
+    margin: 1em 0 4em;
 }
 
 .header-photo {
@@ -33,12 +34,18 @@ body {
 
 .generate-btn {
     color: white;
-    font-weight: 700;
-    text-shadow: 1px 0px 5px #111827;
+    text-shadow: 0px 0px 15px black;
+    font-weight: 600;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #4ADF86;
+    background-color: #10b98187;
+    transition: 0.3s;
+}
+
+.generate-btn:hover {
+    background-color: #10B981;
+    cursor: pointer;
 }
 
 .button-wrapper {    
@@ -47,16 +54,72 @@ body {
     border-bottom: 1px solid #9CA3AF;
 }
 
-.password-wrapper {
-    display: flex;
-}
-
-#pass-box {
+.pass-box {
     text-align: center;
-    width: 8em;
-    margin-right: 20px;
+    width: auto;
+    margin-right: 1em;
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #273549;
-    color: #4ADF86;
+    color: #10B981;
+}
+
+.pass-box-container {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.copy-btn {
+    color: white;
+    background-color: #273549;
+    border: none;
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.main-wrapper, .image-wrapper {
+    margin: 0;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+.password-length {
+    margin-right: 1em;
+}
+  
+.slider {
+-webkit-appearance: none;
+height: 15px;
+border-radius: 5px;
+background: white;
+outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background: #10B981;
+cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background: #10B981;
+cursor: pointer;
 }
