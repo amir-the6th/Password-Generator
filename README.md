@@ -20,6 +20,7 @@ This is my solution to a solo project at Scrimba [JavaScript course](https://scr
 ### Demo
 (⌛ please wait for complete loading if not shown yet)
 <img alt="demo gif" src="./Images/demo.gif" />
+![demo gif](./Images/demo.gif)
 
 ### Screenshot
 
