@@ -32,6 +32,7 @@ function copyOnClick(num) {
         copyBtn = document.getElementById(id="copy-btn-1");
     } else if (num === 2) {
         passContent = passElTwo.value;
+        copyBtn = document.getElementById(id="copy-btn-2");
     } else {
         console.log("Could not retrieve the password from the clipboard.")
     }
