@@ -40,8 +40,8 @@ This is my solution to a solo project at Scrimba [JavaScript course](https://scr
 ### What I learned
 
 I occurred many difficulties throughout the project, including:
-- Configuring the copy-on-click button: I was displaying the password in a <code><p></p></code> element and Clipboard API kind of only welcomes <code><input></code> & <code><textarea></code>. It took me a while to understand this and set everything again.
-- I wanted to display the characters array in another file and import it in the *index.js* file. But that didn't turn out well because in order to do that, your js file should be of type *module*; and when I set the type, the <code>onclick()</code> event caused me problems. I tried to used <code>.addEventListener</code> to fix the problem, but then another issue happened in the copyOnClick() where the caught error stated that "Document is not focused!"
+- Configuring the copy-on-click button: I was displaying the password in a `<p>` element and Clipboard API kind of only welcomes `<input>` & `<textarea>`. It took me a while to understand this and set everything again.
+- I wanted to display the characters array in another file and import it in the *index.js* file. But that didn't turn out well because in order to do that, your js file should be of type *module*; and when I set the type, the `onclick()` event caused me problems. I tried to used <code>.addEventListener</code> to fix the problem, but then another issue happened in the copyOnClick() where the caught error stated that "Document is not focused!"
 
 Overall, I really enjoyed my time working on this project. It made me realize a simple-looking task can become pretty complex when you try to add more functionalities to it.
 
