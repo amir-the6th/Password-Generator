@@ -6,33 +6,34 @@
         <title>Password Generator</title>
     </head>
     <body>
-        <div class="main-wrapper"> 
-            <h1 class="header">Generate a<br><span class="random-pass">random password</span></h1>
-            <p class="description">Never use an insecure password again.</p>
-            <div class="button-wrapper">
-                <div class="symbols-checkbox">
-                    <label for="symbolsCheckbox">Include Symbols</label>
-                    <input class="checkbox" type="checkbox" id="symbolsCheckbox" name="symbolsCheckbox" checked>
+        <main>
+            <div class="main-wrapper"> 
+                <h1 class="header">Generate a<br><span class="random-pass">random password</span></h1>
+                <p class="description">Never use an insecure password again.</p>
+                <div class="button-wrapper">
+                    <div class="symbols-checkbox">
+                        <label for="symbolsCheckbox">Include Symbols</label>
+                        <input class="checkbox" type="checkbox" id="symbolsCheckbox" name="symbolsCheckbox" checked>
+                    </div>
+                    <div class="slider-container">
+                        <label for="myRange" class="password-length">Password Length: <span id="pass-length"></span></label>
+                        <input type="range" min="8" max="20" value="12" class="slider" id="myRange">
+                    </div>
+                    <button id="generate-btn" class="generate-btn" onclick="generatePass()">Generate Passwords</button>
                 </div>
-                <div class="slider-container">
-                    <label for="myRange" class="password-length">Password Length: <span id="pass-length"></span></label>
-                    <input type="range" min="8" max="20" value="12" class="slider" id="myRange">
+                <div class="pass-box-container">
+                    <input id="pass-box1" class="pass-box" onclick="copyOnClick(1)" disabled></p>
+                    <button id="copy-btn-1" class="copy-btn" onclick="copyOnClick(1)">Copy <i class="fa fa-copy"></i></button>
                 </div>
-                <button id="generate-btn" class="generate-btn" onclick="generatePass()">Generate Passwords</button>
+                <div class="pass-box-container">
+                    <input id="pass-box2" class="pass-box" onclick="copyOnClick(2)" disabled></p>
+                    <button id="copy-btn-2" class="copy-btn" onclick="copyOnClick(2)">Copy <i class="fa fa-copy"></i></button>
+                </div>
             </div>
-            <div class="pass-box-container">
-                <input id="pass-box1" class="pass-box" onclick="copyOnClick(1)" disabled></p>
-                <button id="copy-btn-1" class="copy-btn" onclick="copyOnClick(1)">Copy <i class="fa fa-copy"></i></button>
+            <div class="image-wrapper">
+                <img src="images/padlock.png" alt="two hands wearing gloves typing something on the laptop" class="header-photo">
             </div>
-            <div class="pass-box-container">
-                <input id="pass-box2" class="pass-box" onclick="copyOnClick(2)" disabled></p>
-                <button id="copy-btn-2" class="copy-btn" onclick="copyOnClick(2)">Copy <i class="fa fa-copy"></i></button>
-            </div>
-        </div>
-        
-        <div class="image-wrapper">
-            <img src="images/padlock.png" alt="two hands wearing gloves typing something on the laptop" class="header-photo">
-        </div>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>
