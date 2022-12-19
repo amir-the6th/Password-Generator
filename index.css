@@ -146,10 +146,6 @@ main {
         flex-direction: column-reverse;
     }
 
-    .main-wrapper {
-        margin: 0 0 0 5em;
-    }
-
     .header-photo {
         width: 20em;
     }
